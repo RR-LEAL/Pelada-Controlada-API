@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PeladaControladaAPI.Data;
+using PeladaControladaAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, 
         ServerVersion.AutoDetect(connectionString))
 );
+
+// Injeta o serviço de mensagem (pode trocar por TwilioService no futuro)
+builder.Services.AddScoped<IMensagemService, ConsoleMensagemService>();
 
 var app = builder.Build();
 

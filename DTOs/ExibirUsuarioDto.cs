@@ -6,4 +6,5 @@ public class ExibirUsuarioDto
     public string? NomeUsuario { get; set; }
     public string? Email { get; set; }
     public DateOnly? DataCadastro { get; set; }
+    public string? Telefone { get; set; }
 }

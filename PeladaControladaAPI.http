@@ -1,0 +1,6 @@
+@PeladaControladaAPI_HostAddress = http://localhost:5232
+
+GET {{PeladaControladaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

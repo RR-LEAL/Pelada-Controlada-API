@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeladaControladaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3db0f9624631289f6ed4ff32a76fa77592298cf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bec035fc48c7a0aa23fd24536f9141575d4520b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeladaControladaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeladaControladaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

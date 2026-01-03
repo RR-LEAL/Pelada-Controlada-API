@@ -106,3 +106,5 @@ D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\refint\PeladaControlad
 D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\PeladaControladaAPI.pdb
 D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\PeladaControladaAPI.genruntimeconfig.cache
 D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\ref\PeladaControladaAPI.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\PeladaControladaAPI.sourcelink.json

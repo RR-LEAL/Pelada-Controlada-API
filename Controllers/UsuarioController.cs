@@ -378,18 +378,13 @@ public class UsuarioController : ControllerBase
                 return BadRequest("Código inválido.");
             }
 
-            otp.Usado = true;
-            otp.UsadoEm = DateTime.UtcNow;
+            // Deletar o código usado e todos os outros não usados do mesmo usuário
+            var codigosDoUsuario = await _context.UsuarioCodigosOtp
+                .Where(o => o.Usuario.Id == usuario.Id)
+                .ToListAsync();
 
+            _context.UsuarioCodigosOtp.RemoveRange(codigosDoUsuario);
             await _context.SaveChangesAsync();
-
-            await _context.UsuarioCodigosOtp
-            .Where(o => o.Usuario.Id == usuario.Id && !o.Usado)
-            .ExecuteUpdateAsync(o =>
-                o.SetProperty(x => x.Usado, true)
-                .SetProperty(x => x.UsadoEm, DateTime.UtcNow)
-            );
-
 
             _logger.LogInformation("✅ Código OTP validado com sucesso para email: {Email}", dto.Email);
 

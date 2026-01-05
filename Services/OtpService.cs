@@ -15,8 +15,6 @@ public static class OtpService
             sha.ComputeHash(Encoding.UTF8.GetBytes(codigo))
         );
 
-        Console.WriteLine($"Código OTP gerado: {codigo} (hash: {hash})");
-
         return (
             codigo,
             new UsuarioCodigoOtp

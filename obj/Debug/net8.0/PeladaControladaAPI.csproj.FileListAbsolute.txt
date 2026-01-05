@@ -108,3 +108,12 @@ D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\PeladaControladaAPI.ge
 D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\ref\PeladaControladaAPI.dll
 D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Pelada Controlada\PeladaControladaAPI\obj\Debug\net8.0\PeladaControladaAPI.sourcelink.json
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Pelada Controlada\PeladaControladaAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll

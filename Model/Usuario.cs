@@ -14,7 +14,7 @@ namespace PeladaControladaAPI.model
         public string? NomeUsuario { get; set; }
 
         [Column("email")]
-        public string? Email { get; set; }
+        public required string Email { get; set; }
 
         [Column("senha")]
         public string? Senha { get; set; }
@@ -24,10 +24,6 @@ namespace PeladaControladaAPI.model
 
         [Column("data_cadastro")]
         public DateOnly? DataCadastro { get; set; } // DATE vira DateOnly no .NET moderno
-        [Column("codigo_recuperacao")]
-        public string? CodigoRecuperacao { get; set; } // O código de 6 dígitos
 
-        [Column("validade_codigo")]
-        public DateTime? ValidadeCodigo { get; set; } // Para o código expirar em 10 min
     }
 }

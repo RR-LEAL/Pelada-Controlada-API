@@ -2,6 +2,6 @@ namespace PeladaControladaAPI.Services
 {
     public interface IMensagemService
     {
-        Task EnviarWhatsAppAsync(string telefone, string mensagem);
+        Task EnviarAsync(string destino, string mensagem);
     }
 }

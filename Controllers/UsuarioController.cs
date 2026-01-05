@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PeladaControladaAPI.Data;
 using PeladaControladaAPI.DTOs;
 using PeladaControladaAPI.model;
+using PeladaControladaAPI.Model;
 using PeladaControladaAPI.Services;
+using Serilog;
 
 namespace PeladaControladaAPI.Controllers;
 
@@ -11,157 +14,225 @@ namespace PeladaControladaAPI.Controllers;
 public class UsuarioController : ControllerBase
 {
     private readonly AppDbContext _context;
-    private readonly IMensagemService _mensagemService; 
+    private readonly IMensagemService _mensagemService;
+    private readonly ILogger<UsuarioController> _logger;
 
     // Injeção de dependência do Banco de Dados
-    public UsuarioController(AppDbContext context, IMensagemService mensagemService)
+    public UsuarioController(AppDbContext context, IMensagemService mensagemService, ILogger<UsuarioController> logger)
     {
         _context = context;
         _mensagemService = mensagemService;
+        _logger = logger;
     }
 
     [HttpPost]
     public IActionResult CriarUsuario([FromBody] CriarUsuarioDto dto)
     {
-        var emailExiste = _context.Usuarios.Any(u => u.Email == dto.Email);
-        if (emailExiste)
+        try
         {
-            return BadRequest("Este email já está cadastrado.");
+            _logger.LogInformation("📝 Iniciando criação de novo usuário com email: {Email}", dto.Email);
+
+            var emailExiste = _context.Usuarios.Any(u => u.Email == dto.Email);
+            if (emailExiste)
+            {
+                _logger.LogWarning("⚠️ Tentativa de criar usuário com email já existente: {Email}", dto.Email);
+                return BadRequest("Este email já está cadastrado.");
+            }
+
+            //Criptografa a senha (Hash)
+            string senhaHash = BCrypt.Net.BCrypt.HashPassword(dto.Senha);
+
+            var novoUsuario = new Usuario
+            {
+                NomeUsuario = dto.NomeUsuario,
+                Email = dto.Email,
+                Senha = senhaHash,
+                Telefone = dto.Telefone,
+                DataCadastro = DateOnly.FromDateTime(DateTime.Now)
+            };
+
+            _context.Usuarios.Add(novoUsuario);
+            _context.SaveChanges();
+
+            _logger.LogInformation("✅ Usuário criado com sucesso. ID: {UsuarioId}, Email: {Email}", novoUsuario.Id, novoUsuario.Email);
+
+            var usuarioRetorno = new ExibirUsuarioDto
+            {
+                Id = novoUsuario.Id,
+                NomeUsuario = novoUsuario.NomeUsuario,
+                Email = novoUsuario.Email,
+                Telefone = novoUsuario.Telefone,
+                DataCadastro = novoUsuario.DataCadastro
+            };
+
+            return CreatedAtAction(nameof(BuscarUsuarioPorId), new { id = novoUsuario.Id }, usuarioRetorno);
         }
-
-        //Criptografa a senha (Hash)
-        string senhaHash = BCrypt.Net.BCrypt.HashPassword(dto.Senha);
-
-        var novoUsuario = new Usuario
+        catch (Exception ex)
         {
-            NomeUsuario = dto.NomeUsuario,
-            Email = dto.Email,
-            Senha = senhaHash,
-            Telefone = dto.Telefone,
-            DataCadastro = DateOnly.FromDateTime(DateTime.Now)
-        };
-
-        _context.Usuarios.Add(novoUsuario);
-        _context.SaveChanges();
-
-        var usuarioRetorno = new ExibirUsuarioDto
-        {
-            Id = novoUsuario.Id,
-            NomeUsuario = novoUsuario.NomeUsuario,
-            Email = novoUsuario.Email,
-            Telefone = novoUsuario.Telefone,
-            DataCadastro = novoUsuario.DataCadastro
-        };
-
-        return CreatedAtAction(nameof(BuscarUsuarioPorId), new { id = novoUsuario.Id }, usuarioRetorno);
+            _logger.LogError(ex, "❌ Erro ao criar usuário com email: {Email}", dto.Email);
+            return StatusCode(500, "Erro ao criar usuário.");
+        }
     }
 
     [HttpGet("{id}")]
     public IActionResult BuscarUsuarioPorId(int id)
     {
-        var usuario = _context.Usuarios.Find(id);
-
-        if (usuario == null)
+        try
         {
-            return NotFound("Usuário não encontrado.");
+            _logger.LogInformation("🔍 Buscando usuário com ID: {UsuarioId}", id);
+
+            var usuario = _context.Usuarios.Find(id);
+
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Usuário não encontrado. ID: {UsuarioId}", id);
+                return NotFound("Usuário não encontrado.");
+            }
+
+            _logger.LogInformation("✅ Usuário encontrado. ID: {UsuarioId}, Email: {Email}", usuario.Id, usuario.Email);
+
+            var usuarioRetorno = new ExibirUsuarioDto
+            {
+                Id = usuario.Id,
+                NomeUsuario = usuario.NomeUsuario,
+                Email = usuario.Email,
+                Telefone = usuario.Telefone,
+                DataCadastro = usuario.DataCadastro
+            };
+
+            return Ok(usuarioRetorno);
         }
-
-        var usuarioRetorno = new ExibirUsuarioDto
+        catch (Exception ex)
         {
-            Id = usuario.Id,
-            NomeUsuario = usuario.NomeUsuario,
-            Email = usuario.Email,
-            Telefone = usuario.Telefone,
-            DataCadastro = usuario.DataCadastro
-        };
-
-        return Ok(usuarioRetorno);
+            _logger.LogError(ex, "❌ Erro ao buscar usuário com ID: {UsuarioId}", id);
+            return StatusCode(500, "Erro ao buscar usuário.");
+        }
     }
 
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginDto dto)
     {
-        var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == dto.Email);
-
-        if (usuario == null)
+        try
         {
-            return Unauthorized("Email ou senha inválidos.");
+            _logger.LogInformation("🔐 Tentativa de login com email: {Email}", dto.Email);
+
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == dto.Email);
+
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Tentativa de login com email não encontrado: {Email}", dto.Email);
+                return Unauthorized("Email ou senha inválidos.");
+            }
+
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(dto.Senha, usuario.Senha);
+
+            if (!senhaValida)
+            {
+                _logger.LogWarning("⚠️ Tentativa de login com senha inválida para email: {Email}", dto.Email);
+                return Unauthorized("Email ou senha inválidos.");
+            }
+
+            _logger.LogInformation("✅ Login bem-sucedido. Usuário ID: {UsuarioId}, Email: {Email}", usuario.Id, usuario.Email);
+
+            return Ok(new
+            {
+                mensagem = "Login realizado com sucesso!",
+                usuario = usuario.NomeUsuario,
+                id = usuario.Id
+            });
         }
-
-        bool senhaValida = BCrypt.Net.BCrypt.Verify(dto.Senha, usuario.Senha);
-
-        if (!senhaValida)
+        catch (Exception ex)
         {
-            return Unauthorized("Email ou senha inválidos.");
+            _logger.LogError(ex, "❌ Erro ao fazer login com email: {Email}", dto.Email);
+            return StatusCode(500, "Erro ao fazer login.");
         }
-
-        return Ok(new
-        {
-            mensagem = "Login realizado com sucesso!",
-            usuario = usuario.NomeUsuario,
-            id = usuario.Id
-        });
     }
 
     [HttpPut("{id}")]
     public IActionResult AtualizarUsuario(int id, [FromBody] AtualizarUsuarioDto dto)
     {
-        var usuario = _context.Usuarios.Find(id);
-        if (usuario == null) return NotFound("Usuário não encontrado.");
-
-        if (!string.IsNullOrEmpty(dto.NomeUsuario))
+        try
         {
-            usuario.NomeUsuario = dto.NomeUsuario;
-        }
+            _logger.LogInformation("🔄 Iniciando atualização do usuário ID: {UsuarioId}", id);
 
-        if (!string.IsNullOrEmpty(dto.Email))
-        {
-            if (usuario.Email != dto.Email) 
+            var usuario = _context.Usuarios.Find(id);
+            if (usuario == null)
             {
-                var emailEmUso = _context.Usuarios.Any(u => u.Email == dto.Email && u.Id != id);
-                if (emailEmUso)
-                {
-                    return BadRequest("Este e-mail já está sendo utilizado por outro usuário.");
-                }
-                usuario.Email = dto.Email;
+                _logger.LogWarning("⚠️ Tentativa de atualizar usuário não encontrado. ID: {UsuarioId}", id);
+                return NotFound("Usuário não encontrado.");
             }
-        }
 
-        if (!string.IsNullOrEmpty(dto.Telefone))
-        {
+            if (!string.IsNullOrEmpty(dto.NomeUsuario))
+            {
+                usuario.NomeUsuario = dto.NomeUsuario;
+            }
+
+            if (!string.IsNullOrEmpty(dto.Email))
+            {
+                if (usuario.Email != dto.Email)
+                {
+                    var emailEmUso = _context.Usuarios.Any(u => u.Email == dto.Email && u.Id != id);
+                    if (emailEmUso)
+                    {
+                        _logger.LogWarning("⚠️ Email já em uso por outro usuário: {Email}", dto.Email);
+                        return BadRequest("Este e-mail já está sendo utilizado por outro usuário.");
+                    }
+                    usuario.Email = dto.Email;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(dto.Telefone))
+            {
+                usuario.Telefone = dto.Telefone;
+            }
+
+            usuario.NomeUsuario = dto.NomeUsuario;
+            usuario.Email = dto.Email;
             usuario.Telefone = dto.Telefone;
+
+            _context.SaveChanges();
+
+            _logger.LogInformation("✅ Usuário atualizado com sucesso. ID: {UsuarioId}", id);
+
+            return Ok(new ExibirUsuarioDto
+            {
+                Id = usuario.Id,
+                NomeUsuario = usuario.NomeUsuario,
+                Email = usuario.Email,
+                Telefone = usuario.Telefone,
+                DataCadastro = usuario.DataCadastro
+            });
         }
-
-        usuario.NomeUsuario = dto.NomeUsuario;
-        usuario.Email = dto.Email;
-        usuario.Telefone = dto.Telefone;
-
-        _context.SaveChanges();
-
-        return Ok(new ExibirUsuarioDto
+        catch (Exception ex)
         {
-            Id = usuario.Id,
-            NomeUsuario = usuario.NomeUsuario,
-            Email = usuario.Email,
-            Telefone = usuario.Telefone,
-            DataCadastro = usuario.DataCadastro
-        });
+            _logger.LogError(ex, "❌ Erro ao atualizar usuário ID: {UsuarioId}", id);
+            return StatusCode(500, "Erro ao atualizar usuário.");
+        }
     }
 
     [HttpDelete("{id}")]
     public IActionResult DeletarUsuario(int id)
     {
-        var usuario = _context.Usuarios.Find(id);
-        if (usuario == null) return NotFound("Usuário não encontrado.");
-
         try
         {
+            _logger.LogInformation("🗑️ Iniciando exclusão do usuário ID: {UsuarioId}", id);
+
+            var usuario = _context.Usuarios.Find(id);
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Tentativa de deletar usuário não encontrado. ID: {UsuarioId}", id);
+                return NotFound("Usuário não encontrado.");
+            }
+
             _context.Usuarios.Remove(usuario);
             _context.SaveChanges();
+
+            _logger.LogInformation("✅ Usuário deletado com sucesso. ID: {UsuarioId}", id);
             return NoContent();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            _logger.LogError(ex, "❌ Erro ao deletar usuário ID: {UsuarioId}", id);
             return BadRequest("Não é possível excluir este usuário pois ele possui dados vinculados (campeonatos, jogadores, etc).");
         }
     }
@@ -169,71 +240,166 @@ public class UsuarioController : ControllerBase
     [HttpPatch("{id}/alterar-senha")]
     public IActionResult AlterarSenha(int id, [FromBody] AlterarSenhaDto dto)
     {
-        var usuario = _context.Usuarios.Find(id);
-        if (usuario == null) return NotFound("Usuário não encontrado.");
-
-        bool senhaAtualConfere = BCrypt.Net.BCrypt.Verify(dto.SenhaAtual, usuario.Senha);
-        if (!senhaAtualConfere)
+        try
         {
-            return BadRequest("A senha atual está incorreta.");
+            _logger.LogInformation("🔐 Iniciando alteração de senha do usuário ID: {UsuarioId}", id);
+
+            var usuario = _context.Usuarios.Find(id);
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Tentativa de alterar senha de usuário não encontrado. ID: {UsuarioId}", id);
+                return NotFound("Usuário não encontrado.");
+            }
+
+            bool senhaAtualConfere = BCrypt.Net.BCrypt.Verify(dto.SenhaAtual, usuario.Senha);
+            if (!senhaAtualConfere)
+            {
+                _logger.LogWarning("⚠️ Tentativa de alterar senha com senha atual incorreta. ID: {UsuarioId}", id);
+                return BadRequest("A senha atual está incorreta.");
+            }
+
+            string novaSenhaHash = BCrypt.Net.BCrypt.HashPassword(dto.NovaSenha);
+
+            usuario.Senha = novaSenhaHash;
+            _context.SaveChanges();
+
+            _logger.LogInformation("✅ Senha alterada com sucesso. ID: {UsuarioId}", id);
+            return Ok(new { mensagem = "Senha alterada com sucesso!" });
         }
-
-        string novaSenhaHash = BCrypt.Net.BCrypt.HashPassword(dto.NovaSenha);
-
-        usuario.Senha = novaSenhaHash;
-        _context.SaveChanges();
-
-        return Ok(new { mensagem = "Senha alterada com sucesso!" });
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "❌ Erro ao alterar senha do usuário ID: {UsuarioId}", id);
+            return StatusCode(500, "Erro ao alterar senha.");
+        }
     }
 
-    [HttpPost("enviar-codigo-recuperacao")]
-    public async Task<IActionResult> SolicitarRecuperacao([FromBody] SolicitarRecuperacaoDto dto)
+    [HttpPost("recuperar-senha")]
+    public async Task<IActionResult> SolicitarRecuperacao(
+    [FromBody] SolicitarRecuperacaoDto dto)
     {
-        var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == dto.Email);
-        if (usuario == null) return NotFound("Email não encontrado.");
+        try
+        {
+            _logger.LogInformation("📧 Solicitação de recuperação de senha para email: {Email}", dto.Email);
 
-        if (string.IsNullOrEmpty(usuario.Telefone))
-            return BadRequest("Este usuário não possui telefone cadastrado para recuperação via WhatsApp.");
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Email == dto.Email);
 
-        // Gera código de 6 dígitos aleatórios
-        string codigo = Random.Shared.Next(100000, 999999).ToString();
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Solicitação de recuperação para email não encontrado: {Email}", dto.Email);
+                return Ok(); // não revela se o email existe
+            }
 
-        // Salva no banco com validade de 15 minutos
-        usuario.CodigoRecuperacao = codigo;
-        usuario.ValidadeCodigo = DateTime.Now.AddMinutes(5);
-        _context.Usuarios.Update(usuario);
-        _context.SaveChanges();
+            if (!await PodeGerarOtp(usuario.Id))
+            {
+                _logger.LogWarning("⚠️ Muitas tentativas de recuperação. Usuário ID: {UsuarioId}", usuario.Id);
+                return BadRequest("Muitas tentativas. Tente novamente mais tarde.");
+            }
 
-        // Envia via "WhatsApp" (Simulado no Console por enquanto)
-        string mensagem = $"Seu código de recuperação Pelada Controlada é: {codigo}";
-        await _mensagemService.EnviarWhatsAppAsync(usuario.Telefone, mensagem);
+            var (codigo, otpGerado) = OtpService.Gerar();
 
-        return Ok(new { mensagem = "Código de recuperação enviado para o WhatsApp cadastrado." });
+            var otp = new UsuarioCodigoOtp
+            {
+                Usuario = usuario,
+                Hash = otpGerado.Hash,
+                ExpiraEm = otpGerado.ExpiraEm
+            };
+
+            _context.UsuarioCodigosOtp.Add(otp);
+            await _context.SaveChangesAsync();
+
+            await _mensagemService.EnviarAsync(
+                usuario.Email,
+                $"Recuperação de senha - Seu código de verificação é {codigo}"
+            );
+
+            _logger.LogInformation("✅ Código OTP gerado e enviado para email: {Email}", usuario.Email);
+
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "❌ Erro ao solicitar recuperação de senha para email: {Email}", dto.Email);
+            return StatusCode(500, "Erro ao solicitar recuperação de senha.");
+        }
     }
 
-    // 2. Endpoint para TROCAR A SENHA usando o código
-    [HttpPost("redefinir-senha")]
-    public IActionResult RedefinirSenha([FromBody] RedefinirSenhaComCodigoDto dto)
+    private async Task<bool> PodeGerarOtp(int usuarioId)
     {
-        var usuario = _context.Usuarios.FirstOrDefault(u => u.Email == dto.Email);
-        if (usuario == null) return NotFound("Usuário não encontrado.");
+        var limite = DateTime.UtcNow.AddMinutes(-15);
 
-        // Validações do Código
-        if (usuario.CodigoRecuperacao != dto.Codigo)
-            return BadRequest("Código inválido.");
+        var tentativas = await _context.UsuarioCodigosOtp
+            .CountAsync(o =>
+                o.Usuario.Id == usuarioId &&
+                o.CriadoEm >= limite
+            );
 
-        if (usuario.ValidadeCodigo < DateTime.Now)
-            return BadRequest("O código expirou. Solicite um novo.");
-
-        // Se passou, troca a senha
-        usuario.Senha = BCrypt.Net.BCrypt.HashPassword(dto.NovaSenha);
-
-        // Limpa o código para não ser usado de novo
-        usuario.CodigoRecuperacao = null;
-        usuario.ValidadeCodigo = null;
-
-        _context.SaveChanges();
-
-        return Ok(new { mensagem = "Senha redefinida com sucesso! Agora você pode fazer login." });
+        return tentativas < 3;
     }
+
+
+    [HttpPost("validar-codigo")]
+    public async Task<IActionResult> ValidarCodigo(
+    [FromBody] ValidarCodigoDto dto)
+    {
+        try
+        {
+            _logger.LogInformation("🔐 Tentativa de validação de código OTP para email: {Email}", dto.Email);
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Email == dto.Email);
+
+            if (usuario == null)
+            {
+                _logger.LogWarning("⚠️ Tentativa de validar código para email não encontrado: {Email}", dto.Email);
+                return BadRequest("Código inválido.");
+            }
+
+            var otp = await _context.UsuarioCodigosOtp
+                .Where(o =>
+                    o.Usuario.Id == usuario.Id &&
+                    !o.Usado &&
+                    o.ExpiraEm > DateTime.UtcNow
+                )
+                .OrderByDescending(o => o.CriadoEm)
+                .FirstOrDefaultAsync();
+
+            if (otp == null)
+            {
+                _logger.LogWarning("⚠️ Código OTP inválido ou expirado para email: {Email}", dto.Email);
+                return BadRequest("Código inválido ou expirado.");
+            }
+
+            var valido = OtpService.Validar(dto.Codigo, otp);
+
+            if (!valido)
+            {
+                _logger.LogWarning("⚠️ Código OTP inválido para email: {Email}", dto.Email);
+                return BadRequest("Código inválido.");
+            }
+
+            otp.Usado = true;
+            otp.UsadoEm = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+
+            await _context.UsuarioCodigosOtp
+            .Where(o => o.Usuario.Id == usuario.Id && !o.Usado)
+            .ExecuteUpdateAsync(o =>
+                o.SetProperty(x => x.Usado, true)
+                .SetProperty(x => x.UsadoEm, DateTime.UtcNow)
+            );
+
+
+            _logger.LogInformation("✅ Código OTP validado com sucesso para email: {Email}", dto.Email);
+
+            return Ok("Código validado com sucesso.");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "❌ Erro ao validar código OTP para email: {Email}", dto.Email);
+            return StatusCode(500, "Erro ao validar código.");
+        }
+    }
+
 }

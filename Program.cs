@@ -1,8 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using PeladaControladaAPI.Data;
 using PeladaControladaAPI.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// ==========================================
+// 0. CONFIGURAÇÃO DO SERILOG (LOGGING)
+// ==========================================
+builder.Host.UseSerilog((context, loggerConfig) =>
+    loggerConfig.ReadFrom.Configuration(context.Configuration)
+);
 
 // ==========================================
 // 1. CONFIGURAÇÃO DE SERVIÇOS (CONTAINER)
@@ -24,13 +32,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 );
 
 // Injeta o serviço de mensagem (pode trocar por TwilioService no futuro)
-builder.Services.AddScoped<IMensagemService, ConsoleMensagemService>();
+builder.Services.AddScoped<IMensagemService, EmailMensagemService>();
 
 var app = builder.Build();
 
 // ==========================================
 // 2. CONFIGURAÇÃO DO PIPELINE (REQUESTS)
 // ==========================================
+
+// Adiciona middleware de logging HTTP
+app.UseSerilogRequestLogging();
 
 // Habilita o Swagger apenas em desenvolvimento
 if (app.Environment.IsDevelopment())
@@ -42,6 +53,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // Mapeia os Controllers (seus futuros arquivos de rota)
-app.MapControllers(); 
+app.MapControllers();
+
+// Log de inicialização
+Log.Information("🚀 Aplicação iniciada com sucesso!");
 
 app.Run();

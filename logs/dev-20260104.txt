@@ -1,0 +1,717 @@
+[2026-01-04 21:13:42.117 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-01-04 21:13:42.201 -03:00] INF [] 🚀 Aplicação iniciada com sucesso!
+[2026-01-04 21:13:42.204 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+[2026-01-04 21:13:42.241 -03:00] INF [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5232
+[2026-01-04 21:13:42.243 -03:00] DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly PeladaControladaAPI
+[2026-01-04 21:13:42.244 -03:00] INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2026-01-04 21:13:42.245 -03:00] INF [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[2026-01-04 21:13:42.246 -03:00] INF [Microsoft.Hosting.Lifetime] Content root path: D:\Pelada Controlada\PeladaControladaAPI
+[2026-01-04 21:13:42.246 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+[2026-01-04 21:14:02.337 -03:00] INF [Microsoft.Hosting.Lifetime] Application is shutting down...
+[2026-01-04 21:14:02.338 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+[2026-01-04 21:14:02.345 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+[2026-01-04 21:22:32.599 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-01-04 21:22:32.688 -03:00] INF [] 🚀 Aplicação iniciada com sucesso!
+[2026-01-04 21:22:32.692 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+[2026-01-04 21:22:32.729 -03:00] INF [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5232
+[2026-01-04 21:22:32.731 -03:00] DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly PeladaControladaAPI
+[2026-01-04 21:22:32.731 -03:00] INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2026-01-04 21:22:32.732 -03:00] INF [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[2026-01-04 21:22:32.733 -03:00] INF [Microsoft.Hosting.Lifetime] Content root path: D:\Pelada Controlada\PeladaControladaAPI
+[2026-01-04 21:22:32.733 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+[2026-01-04 21:22:47.366 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" accepted.
+[2026-01-04 21:22:47.368 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" started.
+[2026-01-04 21:22:47.369 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFE" accepted.
+[2026-01-04 21:22:47.369 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFE" started.
+[2026-01-04 21:22:47.400 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5232/swagger/index.html - null null
+[2026-01-04 21:22:47.406 -03:00] DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+[2026-01-04 21:22:47.427 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '/swagger/index.html'
+[2026-01-04 21:22:47.429 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+[2026-01-04 21:22:47.496 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP GET /swagger/index.html responded 200 in 60.9044 ms
+[2026-01-04 21:22:47.498 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" completed keep alive response.
+[2026-01-04 21:22:47.500 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5232/swagger/index.html - 200 null text/html;charset=utf-8 103.7446ms
+[2026-01-04 21:22:47.715 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5232/swagger/v1/swagger.json - null null
+[2026-01-04 21:22:47.717 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '/swagger/v1/swagger.json'
+[2026-01-04 21:22:47.718 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+[2026-01-04 21:22:47.809 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP GET /swagger/v1/swagger.json responded 200 in 89.7344 ms
+[2026-01-04 21:22:47.811 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" completed keep alive response.
+[2026-01-04 21:22:47.812 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5232/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.0081ms
+[2026-01-04 21:23:44.662 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - application/json 32
+[2026-01-04 21:23:44.668 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:23:44.670 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)' with route pattern 'api/Usuario/recuperar-senha' is valid for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:23:44.672 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:23:44.676 -03:00] DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+[2026-01-04 21:23:44.677 -03:00] WRN [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] Failed to determine the https port for redirect.
+[2026-01-04 21:23:44.678 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:23:44.691 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "SolicitarRecuperacao", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SolicitarRecuperacao(PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto) on controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI).
+[2026-01-04 21:23:44.694 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of authorization filters (in the following order): ["None"]
+[2026-01-04 21:23:44.695 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of resource filters (in the following order): ["None"]
+[2026-01-04 21:23:44.696 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-01-04 21:23:44.697 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of exception filters (in the following order): ["None"]
+[2026-01-04 21:23:44.698 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-01-04 21:23:44.700 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:23:44.869 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:23:44.885 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:23:44.888 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:23:44.890 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' using the name '' in request data ...
+[2026-01-04 21:23:44.892 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-01-04 21:23:44.899 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBU26Q4VFD", Request id "0HNIBU26Q4VFD:00000003": started reading request body.
+[2026-01-04 21:23:44.900 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBU26Q4VFD", Request id "0HNIBU26Q4VFD:00000003": done reading request body.
+[2026-01-04 21:23:44.904 -03:00] DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'
+[2026-01-04 21:23:44.905 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:23:44.905 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:23:44.906 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:23:44.911 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:23:44.914 -03:00] INF [PeladaControladaAPI.Controllers.UsuarioController] 📧 Solicitação de recuperação de senha para email: teste@teste.com
+[2026-01-04 21:23:45.308 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:23:45.420 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:23:45.440 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: 
+'DbSet<Usuario>()
+    .FirstOrDefault(u => u.Email == __dto_Email_0)'
+[2026-01-04 21:23:45.548 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: new SingleQueryingEnumerable<Usuario>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.DataCadastro (DateOnly?), 1], [Property: Usuario.Email (string) Required, 2], [Property: Usuario.NomeUsuario (string), 3], [Property: Usuario.Senha (string), 4], [Property: Usuario.Telefone (string), 5] }
+            SELECT TOP(1) s.id_usuario, s.data_cadastro, s.email, s.usuario, s.senha, s.telefone
+            FROM scc_usuarios AS s
+            WHERE s.email == @__dto_Email_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Usuario>, 
+        PeladaControladaAPI.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-01-04 21:23:45.573 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:23:45.577 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (3ms).
+[2026-01-04 21:23:45.580 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.607 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.611 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:23:45.615 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (2ms).
+[2026-01-04 21:23:45.625 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (13ms).
+[2026-01-04 21:23:45.630 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:23:45.663 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (33ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:23:45.696 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:23:45.715 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.726 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 57ms reading results.
+[2026-01-04 21:23:45.730 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.733 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (2ms).
+[2026-01-04 21:23:45.737 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: 
+'DbSet<UsuarioCodigoOtp>()
+    .Count(o => o.Usuario.Id == __usuarioId_0 && o.CriadoEm >= __limite_1)'
+[2026-01-04 21:23:45.787 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM UsuarioCodigosOtp AS u
+            INNER JOIN scc_usuarios AS s ON u.UsuarioId == s.id_usuario
+            WHERE (s.id_usuario == @__usuarioId_0) && (u.CriadoEm >= @__limite_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        PeladaControladaAPI.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-01-04 21:23:45.794 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.799 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.801 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:23:45.801 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:23:45.803 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:23:45.803 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:23:45.809 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (5ms) [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:23:45.812 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.813 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 2ms reading results.
+[2026-01-04 21:23:45.814 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.815 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:23:45.841 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] 'AppDbContext' generated a value for the property 'UsuarioCodigoOtp.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:23:45.863 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'UsuarioCodigoOtp' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:23:45.867 -03:00] DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for 'AppDbContext'.
+[2026-01-04 21:23:45.869 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for 'AppDbContext'.
+[2026-01-04 21:23:45.883 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for 'AppDbContext'.
+[2026-01-04 21:23:45.923 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.925 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.927 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:23:45.928 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:23:45.929 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:23:45.930 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2026-01-04 21:23:45.940 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2026-01-04 21:23:45.943 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.944 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 3ms reading results.
+[2026-01-04 21:23:45.946 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:45.946 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:23:45.952 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type 'UsuarioCodigoOtp' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:23:45.954 -03:00] DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[2026-01-04 21:23:49.251 -03:00] INF [PeladaControladaAPI.Controllers.UsuarioController] ✅ Código OTP gerado e enviado para email: teste@teste.com
+[2026-01-04 21:23:49.254 -03:00] INF [Microsoft.AspNetCore.Mvc.StatusCodeResult] Executing StatusCodeResult, setting HTTP status code 200
+[2026-01-04 21:23:49.257 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI) in 4556.0315ms
+[2026-01-04 21:23:49.258 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:23:49.259 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP POST /api/Usuario/recuperar-senha responded 200 in 4584.7206 ms
+[2026-01-04 21:23:49.261 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" completed keep alive response.
+[2026-01-04 21:23:49.263 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:23:49.267 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:23:49.270 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database 'PeladaControladaDB' on server 'localhost' (2ms).
+[2026-01-04 21:23:49.271 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - 200 0 null 4608.2165ms
+[2026-01-04 21:23:51.709 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBU26Q4VFE" received FIN.
+[2026-01-04 21:23:51.710 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBU26Q4VFE" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-01-04 21:23:51.711 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFE" disconnecting.
+[2026-01-04 21:23:51.713 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFE" stopped.
+[2026-01-04 21:26:00.882 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" disconnecting.
+[2026-01-04 21:26:00.883 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFD" stopped.
+[2026-01-04 21:26:00.884 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBU26Q4VFD" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-01-04 21:26:45.163 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFF" accepted.
+[2026-01-04 21:26:45.165 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFF" started.
+[2026-01-04 21:26:45.171 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - application/json 32
+[2026-01-04 21:26:45.175 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:26:45.176 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)' with route pattern 'api/Usuario/recuperar-senha' is valid for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:26:45.177 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:26:45.178 -03:00] DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+[2026-01-04 21:26:45.179 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:26:45.179 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "SolicitarRecuperacao", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SolicitarRecuperacao(PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto) on controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI).
+[2026-01-04 21:26:45.181 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of authorization filters (in the following order): ["None"]
+[2026-01-04 21:26:45.182 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of resource filters (in the following order): ["None"]
+[2026-01-04 21:26:45.183 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-01-04 21:26:45.184 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of exception filters (in the following order): ["None"]
+[2026-01-04 21:26:45.185 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-01-04 21:26:45.186 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:26:45.188 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:26:45.190 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:26:45.191 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' using the name '' in request data ...
+[2026-01-04 21:26:45.192 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-01-04 21:26:45.193 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBU26Q4VFF", Request id "0HNIBU26Q4VFF:00000001": started reading request body.
+[2026-01-04 21:26:45.194 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBU26Q4VFF", Request id "0HNIBU26Q4VFF:00000001": done reading request body.
+[2026-01-04 21:26:45.195 -03:00] DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'
+[2026-01-04 21:26:45.195 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:26:45.196 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:26:45.197 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:26:45.198 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:26:45.199 -03:00] INF [PeladaControladaAPI.Controllers.UsuarioController] 📧 Solicitação de recuperação de senha para email: teste@teste.com
+[2026-01-04 21:26:45.212 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:26:45.216 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:26:45.218 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+[2026-01-04 21:26:45.219 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.221 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.223 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:26:45.224 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:26:45.225 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:26:45.226 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:26:45.228 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:26:45.232 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:26:45.233 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.234 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 2ms reading results.
+[2026-01-04 21:26:45.235 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.236 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:26:45.237 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.238 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.239 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:26:45.240 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:26:45.241 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:26:45.241 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:26:45.244 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:26:45.245 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.246 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 0ms reading results.
+[2026-01-04 21:26:45.247 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.248 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:26:45.250 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] 'AppDbContext' generated a value for the property 'UsuarioCodigoOtp.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:26:45.251 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'UsuarioCodigoOtp' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:26:45.251 -03:00] DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for 'AppDbContext'.
+[2026-01-04 21:26:45.252 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for 'AppDbContext'.
+[2026-01-04 21:26:45.253 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for 'AppDbContext'.
+[2026-01-04 21:26:45.255 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.257 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.258 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:26:45.259 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:26:45.260 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:26:45.260 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2026-01-04 21:26:45.269 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+[2026-01-04 21:26:45.270 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.272 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 1ms reading results.
+[2026-01-04 21:26:45.273 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:45.274 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:26:45.275 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] An entity of type 'UsuarioCodigoOtp' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:26:45.276 -03:00] DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[2026-01-04 21:26:48.036 -03:00] INF [PeladaControladaAPI.Controllers.UsuarioController] ✅ Código OTP gerado e enviado para email: teste@teste.com
+[2026-01-04 21:26:48.038 -03:00] INF [Microsoft.AspNetCore.Mvc.StatusCodeResult] Executing StatusCodeResult, setting HTTP status code 200
+[2026-01-04 21:26:48.039 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI) in 2853.021ms
+[2026-01-04 21:26:48.040 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:26:48.040 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP POST /api/Usuario/recuperar-senha responded 200 in 2862.3225 ms
+[2026-01-04 21:26:48.041 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFF" completed keep alive response.
+[2026-01-04 21:26:48.042 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:26:48.043 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:26:48.044 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:26:48.046 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - 200 0 null 2874.574ms
+[2026-01-04 21:28:58.277 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFF" disconnecting.
+[2026-01-04 21:28:58.279 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBU26Q4VFF" stopped.
+[2026-01-04 21:28:58.280 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBU26Q4VFF" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-01-04 21:35:16.671 -03:00] INF [Microsoft.Hosting.Lifetime] Application is shutting down...
+[2026-01-04 21:35:16.672 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+[2026-01-04 21:35:16.677 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+[2026-01-04 21:40:47.532 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:40:47.941 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:40:48.046 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:40:48.119 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:40:48.392 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:41:11.559 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:41:11.959 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:41:12.064 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:41:12.076 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:41:12.080 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (2ms).
+[2026-01-04 21:41:12.083 -03:00] DBG [Microsoft.EntityFrameworkCore.Migrations] Migrating using database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.086 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:41:12.086 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+[2026-01-04 21:41:12.088 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.094 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.116 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.120 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '' on server 'localhost' (1ms).
+[2026-01-04 21:41:12.125 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteScalar'.
+[2026-01-04 21:41:12.129 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteScalar' (3ms).
+[2026-01-04 21:41:12.130 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteScalar' (6ms).
+[2026-01-04 21:41:12.131 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.137 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.142 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:41:12.156 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:41:12.158 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.159 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (1ms).
+[2026-01-04 21:41:12.161 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:41:12.161 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+[2026-01-04 21:41:12.162 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.168 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.169 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '' on server 'localhost'.
+[2026-01-04 21:41:12.170 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '' on server 'localhost' (0ms).
+[2026-01-04 21:41:12.171 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteScalar'.
+[2026-01-04 21:41:12.171 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteScalar' (0ms).
+[2026-01-04 21:41:12.172 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteScalar' (1ms).
+[2026-01-04 21:41:12.173 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.176 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.177 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:41:12.179 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:41:12.180 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.181 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:41:12.194 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.196 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.196 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:41:12.197 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:41:12.197 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:41:12.198 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+[2026-01-04 21:41:12.201 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+[2026-01-04 21:41:12.203 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.206 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 3ms reading results.
+[2026-01-04 21:41:12.207 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.208 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:41:12.215 -03:00] INF [Microsoft.EntityFrameworkCore.Migrations] No migrations were applied. The database is already up to date.
+[2026-01-04 21:41:12.216 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:41:12.218 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:41:12.219 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:42:55.223 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-01-04 21:42:55.302 -03:00] INF [] 🚀 Aplicação iniciada com sucesso!
+[2026-01-04 21:42:55.304 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+[2026-01-04 21:42:55.342 -03:00] INF [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5232
+[2026-01-04 21:42:55.344 -03:00] DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly PeladaControladaAPI
+[2026-01-04 21:42:55.345 -03:00] INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2026-01-04 21:42:55.346 -03:00] INF [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[2026-01-04 21:42:55.346 -03:00] INF [Microsoft.Hosting.Lifetime] Content root path: D:\Pelada Controlada\PeladaControladaAPI
+[2026-01-04 21:42:55.347 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started
+[2026-01-04 21:43:16.707 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" accepted.
+[2026-01-04 21:43:16.709 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" started.
+[2026-01-04 21:43:16.709 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A4" accepted.
+[2026-01-04 21:43:16.711 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A4" started.
+[2026-01-04 21:43:16.729 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5232/swagger/index.html - null null
+[2026-01-04 21:43:16.733 -03:00] DBG [Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware] Wildcard detected, all requests with hosts will be allowed.
+[2026-01-04 21:43:16.745 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '/swagger/index.html'
+[2026-01-04 21:43:16.746 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+[2026-01-04 21:43:16.803 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP GET /swagger/index.html responded 200 in 52.3692 ms
+[2026-01-04 21:43:16.806 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" completed keep alive response.
+[2026-01-04 21:43:16.808 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5232/swagger/index.html - 200 null text/html;charset=utf-8 79.0092ms
+[2026-01-04 21:43:17.006 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5232/swagger/v1/swagger.json - null null
+[2026-01-04 21:43:17.008 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] No candidates found for the request path '/swagger/v1/swagger.json'
+[2026-01-04 21:43:17.009 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request did not match any endpoints
+[2026-01-04 21:43:17.096 -03:00] INF [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP GET /swagger/v1/swagger.json responded 200 in 85.7629 ms
+[2026-01-04 21:43:17.098 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" completed keep alive response.
+[2026-01-04 21:43:17.098 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 GET http://localhost:5232/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.958ms
+[2026-01-04 21:43:31.594 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - application/json 32
+[2026-01-04 21:43:31.600 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] 1 candidate(s) found for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:43:31.602 -03:00] DBG [Microsoft.AspNetCore.Routing.Matching.DfaMatcher] Endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)' with route pattern 'api/Usuario/recuperar-senha' is valid for the request path '/api/Usuario/recuperar-senha'
+[2026-01-04 21:43:31.603 -03:00] DBG [Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware] Request matched endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:43:31.605 -03:00] DBG [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Static files was skipped as the request already matched an endpoint.
+[2026-01-04 21:43:31.607 -03:00] WRN [Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware] Failed to determine the https port for redirect.
+[2026-01-04 21:43:31.608 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:43:31.621 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "SolicitarRecuperacao", controller = "Usuario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SolicitarRecuperacao(PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto) on controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI).
+[2026-01-04 21:43:31.624 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of authorization filters (in the following order): ["None"]
+[2026-01-04 21:43:31.625 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of resource filters (in the following order): ["None"]
+[2026-01-04 21:43:31.626 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-01-04 21:43:31.627 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of exception filters (in the following order): ["None"]
+[2026-01-04 21:43:31.628 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-01-04 21:43:31.630 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executing controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:43:31.823 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:43:31.839 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed controller factory for controller PeladaControladaAPI.Controllers.UsuarioController (PeladaControladaAPI)
+[2026-01-04 21:43:31.843 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:43:31.846 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' using the name '' in request data ...
+[2026-01-04 21:43:31.848 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-01-04 21:43:31.857 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBUDL626A3", Request id "0HNIBUDL626A3:00000003": started reading request body.
+[2026-01-04 21:43:31.858 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel] Connection id "0HNIBUDL626A3", Request id "0HNIBUDL626A3:00000003": done reading request body.
+[2026-01-04 21:43:31.862 -03:00] DBG [Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter] JSON input formatter succeeded, deserializing to type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'
+[2026-01-04 21:43:31.863 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:43:31.864 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to bind parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:43:31.865 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto' ...
+[2026-01-04 21:43:31.870 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder] Done attempting to validate the bound parameter 'dto' of type 'PeladaControladaAPI.DTOs.SolicitarRecuperacaoDto'.
+[2026-01-04 21:43:31.873 -03:00] INF [PeladaControladaAPI.Controllers.UsuarioController] 📧 Solicitação de recuperação de senha para email: teste@teste.com
+[2026-01-04 21:43:32.279 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:43:32.393 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:43:32.412 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: 
+'DbSet<Usuario>()
+    .FirstOrDefault(u => u.Email == __dto_Email_0)'
+[2026-01-04 21:43:32.520 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: new SingleQueryingEnumerable<Usuario>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.DataCadastro (DateOnly?), 1], [Property: Usuario.Email (string) Required, 2], [Property: Usuario.NomeUsuario (string), 3], [Property: Usuario.Senha (string), 4], [Property: Usuario.Telefone (string), 5] }
+            SELECT TOP(1) s.id_usuario, s.data_cadastro, s.email, s.usuario, s.senha, s.telefone
+            FROM scc_usuarios AS s
+            WHERE s.email == @__dto_Email_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Usuario>, 
+        PeladaControladaAPI.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-01-04 21:43:32.546 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:43:32.550 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (3ms).
+[2026-01-04 21:43:32.552 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.578 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.583 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:43:32.588 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (2ms).
+[2026-01-04 21:43:32.599 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (16ms).
+[2026-01-04 21:43:32.605 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:43:32.639 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (34ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`id_usuario`, `s`.`data_cadastro`, `s`.`email`, `s`.`usuario`, `s`.`senha`, `s`.`telefone`
+FROM `scc_usuarios` AS `s`
+WHERE `s`.`email` = @__dto_Email_0
+LIMIT 1
+[2026-01-04 21:43:32.669 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:43:32.689 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.698 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 53ms reading results.
+[2026-01-04 21:43:32.701 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.703 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (2ms).
+[2026-01-04 21:43:32.706 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Compiling query expression: 
+'DbSet<UsuarioCodigoOtp>()
+    .Count(o => o.Usuario.Id == __usuarioId_0 && o.CriadoEm >= __limite_1)'
+[2026-01-04 21:43:32.752 -03:00] DBG [Microsoft.EntityFrameworkCore.Query] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM UsuarioCodigosOtp AS u
+            INNER JOIN scc_usuarios AS s ON u.UsuarioId == s.id_usuario
+            WHERE (s.id_usuario == @__usuarioId_0) && (u.CriadoEm >= @__limite_1)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        PeladaControladaAPI.Data.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-01-04 21:43:32.759 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.764 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.765 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:43:32.766 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:43:32.766 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:43:32.768 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:43:32.773 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (5ms) [Parameters=[@__usuarioId_0='?' (DbType = Int32), @__limite_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `UsuarioCodigosOtp` AS `u`
+INNER JOIN `scc_usuarios` AS `s` ON `u`.`UsuarioId` = `s`.`id_usuario`
+WHERE (`s`.`id_usuario` = @__usuarioId_0) AND (`u`.`CriadoEm` >= @__limite_1)
+[2026-01-04 21:43:32.775 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.776 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 1ms reading results.
+[2026-01-04 21:43:32.777 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.778 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:43:32.800 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] 'AppDbContext' generated a value for the property 'UsuarioCodigoOtp.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:43:32.821 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] Context 'AppDbContext' started tracking 'UsuarioCodigoOtp' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[2026-01-04 21:43:32.826 -03:00] DBG [Microsoft.EntityFrameworkCore.Update] SaveChanges starting for 'AppDbContext'.
+[2026-01-04 21:43:32.829 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges starting for 'AppDbContext'.
+[2026-01-04 21:43:32.844 -03:00] DBG [Microsoft.EntityFrameworkCore.ChangeTracking] DetectChanges completed for 'AppDbContext'.
+[2026-01-04 21:43:32.883 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.885 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.888 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:43:32.889 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:43:32.890 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (2ms).
+[2026-01-04 21:43:32.891 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsadoEm`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[2026-01-04 21:43:32.896 -03:00] ERR [Microsoft.EntityFrameworkCore.Database.Command] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = DateTime), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+INSERT INTO `UsuarioCodigosOtp` (`Id`, `CriadoEm`, `ExpiraEm`, `Hash`, `Usado`, `UsadoEm`, `UsuarioId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[2026-01-04 21:43:32.899 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.900 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:43:32.956 -03:00] ERR [Microsoft.EntityFrameworkCore.Update] An exception occurred in the database while saving changes for context type 'PeladaControladaAPI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'UsadoEm' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'UsadoEm' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[2026-01-04 21:43:32.963 -03:00] ERR [PeladaControladaAPI.Controllers.UsuarioController] ❌ Erro ao solicitar recuperação de senha para email: teste@teste.com
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Unknown column 'UsadoEm' in 'field list'
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao(SolicitarRecuperacaoDto dto) in D:\Pelada Controlada\PeladaControladaAPI\Controllers\UsuarioController.cs:line 309
+[2026-01-04 21:43:32.973 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-01-04 21:43:32.975 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] No information found on request to perform content negotiation.
+[2026-01-04 21:43:32.975 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-01-04 21:43:32.976 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-01-04 21:43:32.977 -03:00] DBG [Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+[2026-01-04 21:43:32.977 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'System.String'.
+[2026-01-04 21:43:32.981 -03:00] INF [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI) in 1349.446ms
+[2026-01-04 21:43:32.982 -03:00] INF [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'PeladaControladaAPI.Controllers.UsuarioController.SolicitarRecuperacao (PeladaControladaAPI)'
+[2026-01-04 21:43:32.983 -03:00] ERR [Serilog.AspNetCore.RequestLoggingMiddleware] HTTP POST /api/Usuario/recuperar-senha responded 500 in 1378.5852 ms
+[2026-01-04 21:43:32.985 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" completed keep alive response.
+[2026-01-04 21:43:32.987 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:43:32.990 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:43:32.992 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database 'PeladaControladaDB' on server 'localhost' (1ms).
+[2026-01-04 21:43:32.993 -03:00] INF [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/1.1 POST http://localhost:5232/api/Usuario/recuperar-senha - 500 null text/plain; charset=utf-8 1398.9929ms
+[2026-01-04 21:44:23.716 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBUDL626A4" received FIN.
+[2026-01-04 21:44:23.718 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A4" disconnecting.
+[2026-01-04 21:44:23.718 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBUDL626A4" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-01-04 21:44:23.726 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A4" stopped.
+[2026-01-04 21:45:31.227 -03:00] INF [Microsoft.Hosting.Lifetime] Application is shutting down...
+[2026-01-04 21:45:31.228 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopping
+[2026-01-04 21:45:31.239 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" disconnecting.
+[2026-01-04 21:45:31.240 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Connections] Connection id "0HNIBUDL626A3" stopped.
+[2026-01-04 21:45:31.241 -03:00] DBG [Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets] Connection id "0HNIBUDL626A3" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-01-04 21:45:31.245 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting stopped
+[2026-01-04 21:45:39.966 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:45:40.387 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:45:40.492 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:45:40.566 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:45:40.981 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:46:14.722 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-01-04 21:46:15.135 -03:00] DBG [Microsoft.EntityFrameworkCore.Model.Validation] The property 'UsuarioCodigoOtp.UsuarioId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-01-04 21:46:15.234 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 8.0.0 initialized 'AppDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.0' with options: ServerVersion=8.0.44-mysql 
+[2026-01-04 21:46:15.247 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:46:15.251 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (2ms).
+[2026-01-04 21:46:15.254 -03:00] DBG [Microsoft.EntityFrameworkCore.Migrations] Migrating using database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.257 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:46:15.258 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (1ms).
+[2026-01-04 21:46:15.260 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.267 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.289 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.294 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '' on server 'localhost' (2ms).
+[2026-01-04 21:46:15.299 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteScalar'.
+[2026-01-04 21:46:15.303 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteScalar' (2ms).
+[2026-01-04 21:46:15.305 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteScalar' (7ms).
+[2026-01-04 21:46:15.306 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.312 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.317 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:46:15.330 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:46:15.332 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.333 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (1ms).
+[2026-01-04 21:46:15.335 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Creating DbConnection.
+[2026-01-04 21:46:15.335 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Created DbConnection. (0ms).
+[2026-01-04 21:46:15.336 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.341 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.343 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database '' on server 'localhost'.
+[2026-01-04 21:46:15.344 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database '' on server 'localhost' (0ms).
+[2026-01-04 21:46:15.345 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteScalar'.
+[2026-01-04 21:46:15.345 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteScalar' (0ms).
+[2026-01-04 21:46:15.347 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteScalar' (1ms).
+[2026-01-04 21:46:15.347 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.350 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.351 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:46:15.353 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='PeladaControladaDB' AND TABLE_NAME='__EFMigrationsHistory';
+[2026-01-04 21:46:15.354 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.355 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:46:15.369 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.371 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.371 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteReader'.
+[2026-01-04 21:46:15.372 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteReader' (0ms).
+[2026-01-04 21:46:15.373 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-01-04 21:46:15.374 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+[2026-01-04 21:46:15.376 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;
+[2026-01-04 21:46:15.379 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Closing data reader to 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.380 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] A data reader for 'PeladaControladaDB' on server 'localhost' is being disposed after spending 2ms reading results.
+[2026-01-04 21:46:15.381 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.381 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:46:15.389 -03:00] INF [Microsoft.EntityFrameworkCore.Migrations] Applying migration '20260105004540_AddUsadoEmToUsuarioCodigoOtp'.
+[2026-01-04 21:46:15.427 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opening connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.429 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Opened connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.431 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Beginning transaction with isolation level 'Unspecified'.
+[2026-01-04 21:46:15.433 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Began transaction with isolation level 'Unspecified'.
+[2026-01-04 21:46:15.435 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteNonQuery'.
+[2026-01-04 21:46:15.436 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteNonQuery' (1ms).
+[2026-01-04 21:46:15.437 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+[2026-01-04 21:46:15.438 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `UsuarioCodigosOtp` ADD `UsadoEm` datetime(6) NOT NULL DEFAULT '0001-01-01 00:00:00';
+[2026-01-04 21:46:15.484 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE `UsuarioCodigosOtp` ADD `UsadoEm` datetime(6) NOT NULL DEFAULT '0001-01-01 00:00:00';
+[2026-01-04 21:46:15.485 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Creating DbCommand for 'ExecuteNonQuery'.
+[2026-01-04 21:46:15.486 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Created DbCommand for 'ExecuteNonQuery' (0ms).
+[2026-01-04 21:46:15.487 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+[2026-01-04 21:46:15.488 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Command] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20260105004540_AddUsadoEmToUsuarioCodigoOtp', '8.0.0');
+[2026-01-04 21:46:15.494 -03:00] INF [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20260105004540_AddUsadoEmToUsuarioCodigoOtp', '8.0.0');
+[2026-01-04 21:46:15.496 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Committing transaction.
+[2026-01-04 21:46:15.498 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Committed transaction.
+[2026-01-04 21:46:15.499 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Transaction] Disposing transaction.
+[2026-01-04 21:46:15.500 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.501 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Closed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:46:15.503 -03:00] DBG [Microsoft.EntityFrameworkCore.Infrastructure] 'AppDbContext' disposed.
+[2026-01-04 21:46:15.504 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposing connection to database 'PeladaControladaDB' on server 'localhost'.
+[2026-01-04 21:46:15.505 -03:00] DBG [Microsoft.EntityFrameworkCore.Database.Connection] Disposed connection to database 'PeladaControladaDB' on server 'localhost' (0ms).
+[2026-01-04 21:51:05.130 -03:00] DBG [Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-01-04 21:51:05.200 -03:00] INF [] 🚀 Aplicação iniciada com sucesso!
+[2026-01-04 21:51:05.203 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting starting
+[2026-01-04 21:51:05.239 -03:00] INF [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5232
+[2026-01-04 21:51:05.240 -03:00] DBG [Microsoft.AspNetCore.Hosting.Diagnostics] Loaded hosting startup assembly PeladaControladaAPI
+[2026-01-04 21:51:05.241 -03:00] INF [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2026-01-04 21:51:05.242 -03:00] INF [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[2026-01-04 21:51:05.243 -03:00] INF [Microsoft.Hosting.Lifetime] Content root path: D:\Pelada Controlada\PeladaControladaAPI
+[2026-01-04 21:51:05.243 -03:00] DBG [Microsoft.Extensions.Hosting.Internal.Host] Hosting started

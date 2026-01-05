@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PeladaControladaAPI.model;
+using PeladaControladaAPI.Model;
 
 namespace PeladaControladaAPI.Data
 {
@@ -32,6 +33,7 @@ namespace PeladaControladaAPI.Data
         public DbSet<Jogo> Jogos { get; set; }
         public DbSet<Pontuacao> Pontuacoes { get; set; }
         public DbSet<Classificacao> Classificacoes { get; set; }
+        public DbSet<UsuarioCodigoOtp> UsuarioCodigosOtp { get; set; }
 
         // ========================================================================
         // CONFIGURAÇÕES AVANÇADAS (Fluent API)

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeladaControladaAPI.Data;
 
@@ -10,9 +11,11 @@ using PeladaControladaAPI.Data;
 namespace PeladaControladaAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260104230919_AddUsuarioCodigoOtp")]
+    partial class AddUsuarioCodigoOtp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,15 +41,15 @@ namespace PeladaControladaAPI.Migrations
                     b.Property<bool>("Usado")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime>("UsadoEm")
-                        .HasColumnType("datetime(6)");
+                    b.Property<Guid>("UsuarioId")
+                        .HasColumnType("char(36)");
 
-                    b.Property<int>("UsuarioId")
+                    b.Property<int>("UsuarioId1")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasIndex("UsuarioId1");
 
                     b.ToTable("UsuarioCodigosOtp");
                 });
@@ -682,12 +685,15 @@ namespace PeladaControladaAPI.Migrations
                         .HasColumnType("int")
                         .HasColumnName("id_usuario");
 
+                    b.Property<string>("CodigoRecuperacao")
+                        .HasColumnType("longtext")
+                        .HasColumnName("codigo_recuperacao");
+
                     b.Property<DateOnly?>("DataCadastro")
                         .HasColumnType("date")
                         .HasColumnName("data_cadastro");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("email");
 
@@ -703,6 +709,10 @@ namespace PeladaControladaAPI.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("telefone");
 
+                    b.Property<DateTime?>("ValidadeCodigo")
+                        .HasColumnType("datetime(6)")
+                        .HasColumnName("validade_codigo");
+
                     b.HasKey("Id");
 
                     b.ToTable("scc_usuarios");
@@ -712,7 +722,7 @@ namespace PeladaControladaAPI.Migrations
                 {
                     b.HasOne("PeladaControladaAPI.model.Usuario", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UsuarioId")
+                        .HasForeignKey("UsuarioId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
